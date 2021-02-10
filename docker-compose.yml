@@ -8,14 +8,16 @@ services:
       - ${PHP_CODE_PATH}:/app
     restart: "no"
   phpunit:
-    image: php:${PHP_VERSION}-cli
+    build:
+      context: .
     working_dir: /app
     restart: "no"
     entrypoint: vendor/bin/phpunit
     volumes:
       - ${PHP_CODE_PATH}:/app
   php:
-    image: php:7.4-cli
+    build:
+      context: .
     restart: "no"
     volumes:
       - ${PHP_CODE_PATH}:/app
