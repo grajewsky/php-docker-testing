@@ -1,0 +1,25 @@
+version: "3.1"
+services:
+  composer:
+    image: composer:2.0.9
+    environment:
+      - COMPOSER_CACHE_DIR=/app/.cache/composer
+    volumes:
+      - ${PHP_CODE_PATH}:/app
+    restart: never
+  phpunit:
+    image: php:${PHP_VERSION}-cli
+    working_dir: /app
+    restart: never
+    entrypoint: vendor/bin/phpunit
+    volumes:
+      - ${PHP_CODE_PATH}:/app
+  php:
+    image: php:7.4-cli
+    restart: never
+    volumes:
+      - ${PHP_CODE_PATH}:/app
+    working_dir: /app
+volumes:
+  data:
+    driver: local
