@@ -12,6 +12,7 @@ services:
       context: .
       args:
         - PHP_VERSION=${PHP_VERSION}
+        - XDEBUG_VERSION=${XDEBUG_VERSION}
     working_dir: /app
     restart: "no"
     entrypoint: vendor/bin/phpunit
