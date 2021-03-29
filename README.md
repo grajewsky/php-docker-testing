@@ -4,7 +4,7 @@ Docker for PHP testing
 
 ## Installation
 ```shell
-> git submodule add https://github.com/grajewsky/php-docker-testing.git
+> git submodule add --name testing https://github.com/grajewsky/php-docker-testing.git testing
 ```
 
 ## Configuration
