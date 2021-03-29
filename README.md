@@ -9,7 +9,7 @@ Docker for PHP testing
 
 ## Configuration
 ```shell
-> cd php-docker-testing
+> cd testing
 > cp .env.example .env
 ```
 
