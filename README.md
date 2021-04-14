@@ -14,3 +14,11 @@ Docker for PHP testing
 ```
 
 Edit `.env` settings for project.
+
+## Easy to extend
+
+Add your docker-compose-custom-`yourprefix`.yml file
+
+Add to `.env` your file `docker-compose-custom-yourprefix.yml` file
+ to `COMPOSE_FILE`
+
