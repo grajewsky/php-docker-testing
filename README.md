@@ -13,7 +13,12 @@ Docker for PHP testing
 > cp .env.example .env
 ```
 
-Edit `.env` settings for project.
+Costumize `.env` file for settings.
+
+- customize containers prefix
+- select docker-compose files - testing php [+ mysql [+ phpmyadmin]]
+- select PHP version 5.6 - 8
+- select PHP EXT to install [xdebug]
 
 ## Easy to extend
 
