@@ -6,4 +6,4 @@ services:
       - PMA_ARBITRARY=1
     restart: always
     ports:
-      - 8080:80
+      - ${PHPMYADMIN_PORT}:80
