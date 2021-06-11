@@ -9,7 +9,8 @@ git submodule add --name testing https://github.com/grajewsky/php-docker-testing
 
 ## Configuration
 ```shell
-cd testing```
+cd testing
+```
 
 ```shell
 cp .env.example .env
