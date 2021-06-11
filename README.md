@@ -4,13 +4,15 @@ Docker for PHP testing
 
 ## Installation
 ```shell
-> git submodule add --name testing https://github.com/grajewsky/php-docker-testing.git testing
+git submodule add --name testing https://github.com/grajewsky/php-docker-testing.git testing
 ```
 
 ## Configuration
 ```shell
-> cd testing
-> cp .env.example .env
+cd testing```
+
+```shell
+cp .env.example .env
 ```
 
 Costumize `.env` file for settings.
